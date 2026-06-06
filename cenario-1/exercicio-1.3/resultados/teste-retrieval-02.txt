@@ -1,0 +1,83 @@
+======================================================================
+SYSTEM PROMPT
+======================================================================
+Você é um assistente especializado em atendimento ao cliente da NovaTech Logística.
+
+REGRAS OBRIGATÓRIAS:
+1. Responda APENAS com base nos trechos de documentação fornecidos abaixo.
+2. Se a informação não estiver nos trechos, diga claramente: "Não encontrei cobertura para essa questão na documentação disponível. Recomendo escalar para [área responsável]."
+3. NUNCA invente informações ou extrapole além do que está nos trechos.
+4. NUNCA misture informações de versões diferentes de um mesmo documento sem avisar.
+5. Cite a fonte de cada informação entre colchetes: [FONTE: nome_do_arquivo | seção].
+6. Se houver versões conflitantes de um documento nos trechos, apresente ambas as versões e indique qual é a mais recente.
+7. Se um trecho vier de fonte INFORMAL, sinalize: "⚠️ Esta informação vem de fonte informal (não validada oficialmente)."
+8. Seja objetivo e direto. Priorize respostas acionáveis para o atendente.
+
+======================================================================
+CONTEXTO RECUPERADO (BASE DE CONHECIMENTO)
+======================================================================
+─── Trecho 1 ───
+📄 Fonte: PROC-042-frete-especial-v1.md (versão: v1)
+📍 Seção: PROC-042 — Procedimento de Cálculo de Frete Especial > 2. Fórmula de cálculo > 2.1. Multiplicadores regionais
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8212
+
+[PROC-042-frete-especial-v1.md | PROC-042 — Procedimento de Cálculo de Frete Especial > 2. Fórmula de cálculo > 2.1. Multiplicadores regionais]
+
+### 2.1. Multiplicadores regionais  
+| Região | Multiplicador |
+|--------|--------------|
+| Sul | 1.2 |
+| Sudeste | 1.0 |
+| Centro-Oeste | 1.3 |
+| Nordeste | 1.4 |
+| Norte | 1.6 |
+
+─── Trecho 2 ───
+📄 Fonte: PROC-042-v2-frete-especial-revisado.md (versão: v2)
+📍 Seção: PROC-042-v2 — Procedimento de Cálculo de Frete Especial (Revisado) > 2. Fórmula de cálculo > 2.1. Multiplicadores regionais (atualizados em novembro/2023)
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8025
+
+[PROC-042-v2-frete-especial-revisado.md | PROC-042-v2 — Procedimento de Cálculo de Frete Especial (Revisado) > 2. Fórmula de cálculo > 2.1. Multiplicadores regionais (atualizados em novembro/2023)]
+
+### 2.1. Multiplicadores regionais (atualizados em novembro/2023)  
+| Região | Multiplicador |
+|--------|--------------|
+| Sul | 1.3 |
+| Sudeste | 1.1 |
+| Centro-Oeste | 1.4 |
+| Nordeste | 1.5 |
+| Norte | 1.8 |
+
+─── Trecho 3 ───
+📄 Fonte: FAQ-atendimento.md (versão: v1)
+📍 Seção: FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 8 — "Como funciona o frete especial?"
+🔒 Confiabilidade: ⚠️ INFORMAL
+📊 Relevância: 0.7406
+
+[FAQ-atendimento.md | FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 8 — "Como funciona o frete especial?"]
+
+### Item 8 — "Como funciona o frete especial?"
+Acima de 500kg, aplica a tabela de multiplicadores por região. Cuidado: existem duas versões da PROC-042. A mais recente tem multiplicadores mais altos. Na dúvida, use a mais recente (v2), mas se o cliente reclamar do valor, pode ser que o contrato dele ainda esteja na tabela antiga.
+
+─── Trecho 4 ───
+📄 Fonte: FAQ-atendimento.md (versão: v1)
+📍 Seção: FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 15 — "Cliente diz que é Platinum. Existe esse tier?"
+🔒 Confiabilidade: ⚠️ INFORMAL
+📊 Relevância: 0.7244
+
+[FAQ-atendimento.md | FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 15 — "Cliente diz que é Platinum. Existe esse tier?"]
+
+### Item 15 — "Cliente diz que é Platinum. Existe esse tier?"
+Não existe tier Platinum na NovaTech. Às vezes o cliente confunde com outra transportadora ou com o programa de fidelidade antigo que foi descontinuado em 2022. Oriente que nossos tiers são Gold, Silver e Standard e peça o número do contrato para verificar.
+
+
+======================================================================
+PERGUNTA DO ATENDENTE
+======================================================================
+Qual o multiplicador de frete para região Norte?
+
+======================================================================
+RESPOSTA
+======================================================================

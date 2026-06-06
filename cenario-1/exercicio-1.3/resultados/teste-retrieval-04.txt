@@ -1,0 +1,73 @@
+======================================================================
+SYSTEM PROMPT
+======================================================================
+Você é um assistente especializado em atendimento ao cliente da NovaTech Logística.
+
+REGRAS OBRIGATÓRIAS:
+1. Responda APENAS com base nos trechos de documentação fornecidos abaixo.
+2. Se a informação não estiver nos trechos, diga claramente: "Não encontrei cobertura para essa questão na documentação disponível. Recomendo escalar para [área responsável]."
+3. NUNCA invente informações ou extrapole além do que está nos trechos.
+4. NUNCA misture informações de versões diferentes de um mesmo documento sem avisar.
+5. Cite a fonte de cada informação entre colchetes: [FONTE: nome_do_arquivo | seção].
+6. Se houver versões conflitantes de um documento nos trechos, apresente ambas as versões e indique qual é a mais recente.
+7. Se um trecho vier de fonte INFORMAL, sinalize: "⚠️ Esta informação vem de fonte informal (não validada oficialmente)."
+8. Seja objetivo e direto. Priorize respostas acionáveis para o atendente.
+
+======================================================================
+CONTEXTO RECUPERADO (BASE DE CONHECIMENTO)
+======================================================================
+─── Trecho 1 ───
+📄 Fonte: PROC-042-frete-especial-v1.md (versão: v1)
+📍 Seção: PROC-042 — Procedimento de Cálculo de Frete Especial > 1. Objetivo
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8294
+
+[PROC-042-frete-especial-v1.md | PROC-042 — Procedimento de Cálculo de Frete Especial > 1. Objetivo]
+
+## 1. Objetivo  
+Definir a fórmula e os parâmetros para cálculo de frete especial aplicável a cargas com peso acima de 500kg.
+
+─── Trecho 2 ───
+📄 Fonte: PROC-042-v2-frete-especial-revisado.md (versão: v2)
+📍 Seção: PROC-042-v2 — Procedimento de Cálculo de Frete Especial (Revisado) > 1. Objetivo
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8177
+
+[PROC-042-v2-frete-especial-revisado.md | PROC-042-v2 — Procedimento de Cálculo de Frete Especial (Revisado) > 1. Objetivo]
+
+## 1. Objetivo  
+Definir a fórmula e os parâmetros atualizados para cálculo de frete especial aplicável a cargas com peso acima de 500kg. Os multiplicadores foram revisados para refletir os custos operacionais atualizados de cada região.
+
+─── Trecho 3 ───
+📄 Fonte: FAQ-atendimento.md (versão: v1)
+📍 Seção: FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 22 — "Cliente quer saber sobre seguro de carga. O que falar?"
+🔒 Confiabilidade: ⚠️ INFORMAL
+📊 Relevância: 0.8157
+
+[FAQ-atendimento.md | FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 22 — "Cliente quer saber sobre seguro de carga. O que falar?"]
+
+### Item 22 — "Cliente quer saber sobre seguro de carga. O que falar?"
+A NovaTech oferece seguro de carga como adicional. O valor é 0,3% do valor declarado da mercadoria para cargas padrão e 0,8% para cargas perigosas. Detalhe: isso vale para contratos a partir de 2023. Contratos mais antigos podem ter percentuais diferentes — confirme com o Comercial.
+
+─── Trecho 4 ───
+📄 Fonte: PROC-042-frete-especial-v1.md (versão: v1)
+📍 Seção: PROC-042 — Procedimento de Cálculo de Frete Especial > 4. Condições especiais
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8101
+
+[PROC-042-frete-especial-v1.md | PROC-042 — Procedimento de Cálculo de Frete Especial > 4. Condições especiais]
+
+## 4. Condições especiais  
+- Cargas acima de 5.000kg requerem aprovação prévia do gerente de operações regional.
+- Cargas perigosas com peso acima de 500kg seguem tabela específica (PROC-043: Frete de Cargas Perigosas).
+- Descontos de volume (mais de 10 fretes especiais/mês para o mesmo cliente) devem ser negociados pelo Comercial e registrados em aditivo contratual.
+
+
+======================================================================
+PERGUNTA DO ATENDENTE
+======================================================================
+Como funciona o frete para cargas acima de 500kg?
+
+======================================================================
+RESPOSTA
+======================================================================

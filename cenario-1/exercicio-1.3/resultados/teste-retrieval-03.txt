@@ -1,0 +1,79 @@
+======================================================================
+SYSTEM PROMPT
+======================================================================
+Você é um assistente especializado em atendimento ao cliente da NovaTech Logística.
+
+REGRAS OBRIGATÓRIAS:
+1. Responda APENAS com base nos trechos de documentação fornecidos abaixo.
+2. Se a informação não estiver nos trechos, diga claramente: "Não encontrei cobertura para essa questão na documentação disponível. Recomendo escalar para [área responsável]."
+3. NUNCA invente informações ou extrapole além do que está nos trechos.
+4. NUNCA misture informações de versões diferentes de um mesmo documento sem avisar.
+5. Cite a fonte de cada informação entre colchetes: [FONTE: nome_do_arquivo | seção].
+6. Se houver versões conflitantes de um documento nos trechos, apresente ambas as versões e indique qual é a mais recente.
+7. Se um trecho vier de fonte INFORMAL, sinalize: "⚠️ Esta informação vem de fonte informal (não validada oficialmente)."
+8. Seja objetivo e direto. Priorize respostas acionáveis para o atendente.
+
+======================================================================
+CONTEXTO RECUPERADO (BASE DE CONHECIMENTO)
+======================================================================
+─── Trecho 1 ───
+📄 Fonte: SLA-2024-tabela-sla-clientes.md (versão: v1)
+📍 Seção: SLA-2024 — Tabela de SLA por Tipo de Cliente > 5. Medição e reportes
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8329
+
+[SLA-2024-tabela-sla-clientes.md | SLA-2024 — Tabela de SLA por Tipo de Cliente > 5. Medição e reportes]
+
+## 5. Medição e reportes  
+Os SLAs são medidos pelo sistema de chamados (Azure DevOps) a partir do timestamp de abertura do chamado. O relógio de SLA pausa fora do horário comercial (08h-18h, dias úteis) para chamados gerais, mas não pausa para incidentes críticos de clientes Gold.
+
+─── Trecho 2 ───
+📄 Fonte: FAQ-atendimento.md (versão: v1)
+📍 Seção: FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 15 — "Cliente diz que é Platinum. Existe esse tier?"
+🔒 Confiabilidade: ⚠️ INFORMAL
+📊 Relevância: 0.8211
+
+[FAQ-atendimento.md | FAQ-Atendimento — Perguntas Frequentes do Time de Suporte > Perguntas selecionadas (das 47 do documento original) > Item 15 — "Cliente diz que é Platinum. Existe esse tier?"]
+
+### Item 15 — "Cliente diz que é Platinum. Existe esse tier?"
+Não existe tier Platinum na NovaTech. Às vezes o cliente confunde com outra transportadora ou com o programa de fidelidade antigo que foi descontinuado em 2022. Oriente que nossos tiers são Gold, Silver e Standard e peça o número do contrato para verificar.
+
+─── Trecho 3 ───
+📄 Fonte: SLA-2024-tabela-sla-clientes.md (versão: v1)
+📍 Seção: SLA-2024 — Tabela de SLA por Tipo de Cliente > 1. Classificação de clientes
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8049
+
+[SLA-2024-tabela-sla-clientes.md | SLA-2024 — Tabela de SLA por Tipo de Cliente > 1. Classificação de clientes]
+
+## 1. Classificação de clientes  
+A NovaTech classifica seus clientes em 3 (três) tiers com base no volume mensal de operações e no valor do contrato:  
+| Tier | Critério de elegibilidade | Revisão |
+|------|--------------------------|---------|
+| Gold | Contrato anual acima de R$ 500.000 OU mais de 200 operações/mês | Semestral |
+| Silver | Contrato anual entre R$ 100.000 e R$ 500.000 OU entre 50 e 200 operações/mês | Semestral |
+| Standard | Todos os demais clientes | Anual |  
+Nota: Não existem outros tiers além dos três listados acima. Solicitações de SLA diferenciado fora desses tiers devem ser encaminhadas ao Comercial para análise de viabilidade.
+
+─── Trecho 4 ───
+📄 Fonte: SLA-2024-tabela-sla-clientes.md (versão: v1)
+📍 Seção: SLA-2024 — Tabela de SLA por Tipo de Cliente > 4. Penalidades por descumprimento
+🔒 Confiabilidade: FORMAL
+📊 Relevância: 0.8032
+
+[SLA-2024-tabela-sla-clientes.md | SLA-2024 — Tabela de SLA por Tipo de Cliente > 4. Penalidades por descumprimento]
+
+## 4. Penalidades por descumprimento  
+- Primeira violação de SLA no mês: registro interno, sem impacto contratual.
+- Segunda violação no mesmo mês: crédito de 5% sobre o valor do frete do chamado afetado.
+- Terceira violação ou mais no mesmo mês: crédito de 10% + reunião obrigatória com o gerente de conta (Gold) ou gerente de operações (Silver/Standard).
+
+
+======================================================================
+PERGUNTA DO ATENDENTE
+======================================================================
+Qual o SLA de atendimento para cliente Gold?
+
+======================================================================
+RESPOSTA
+======================================================================
