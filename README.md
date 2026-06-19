@@ -6,9 +6,9 @@ Repositório de exercícios práticos da **Trilha AI First** da DB1 Global Softw
 
 | Cenário                 | Tema                            | Status       |
 | ----------------------- | ------------------------------- | ------------ |
-| [cenario-1](cenario-1/) | Fase de Entendimento e Contexto | ✅ Concluído |
-| cenario-2               | _(próximo)_                     | 🔲 Pendente  |
-| cenario-3               | _(próximo)_                     | 🔲 Pendente  |
+| [cenario-1](cenario-1/) | Fase de Entendimento e Contexto    | ✅ Concluído |
+| [cenario-2](cenario-2/) | Fase de Estruturação do Trabalho   | ✅ Concluído |
+| cenario-3               | _(próximo)_                        | 🔲 Pendente  |
 
 ## Blocos de Conhecimento Cobertos
 
@@ -43,6 +43,30 @@ Repositório de exercícios práticos da **Trilha AI First** da DB1 Global Softw
 - ChromaDB (vector store local)
 - sentence-transformers (`all-MiniLM-L6-v2`)
 - Claude (geração via chat)
+
+## Cenário 2 — Fase de Estruturação do Trabalho
+
+**Tópicos:** MCP, Recorte de Domínio e Spec Driven Development, AGENTS.md, Skills
+
+**Papel exercido:** Desenvolvedor
+
+O cenário usa o repositório de trabalho `cenario-2/novatech-assistant/` (Anexo D — starter repo
+Git local), onde vivem os entregáveis de código e configuração.
+
+### Exercícios entregues
+
+| Exercício | Descrição                                          | Entregáveis (em `cenario-2/novatech-assistant/`)                                  |
+| --------- | -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 2.1       | Configuração e uso real de MCP servers locais      | `.mcp/mcp.json`, `docs/mcp/` (mapeamento, evidência de execução real, riscos)      |
+| 2.2       | Implementação de spec com SDD (query endpoint)     | `specs/query-endpoint/` (tasks + revisão), `src/functions/query/`, `src/shared/`, testes |
+| 2.3       | Estratégia de skills do projeto                    | `skills/SKILLS-STRATEGY.md`, `skills/foundation/typescript-conventions.md`         |
+
+Autoavaliações pela rubrica oficial em `cenario-2/autoavaliacao/` — **todas 3.0 (Aprovado com distinção)**.
+
+### Stack utilizada (Cenário 2)
+
+- TypeScript (strict), Azure Functions v4, Zod, pino, Vitest
+- MCP servers locais: `filesystem`, `git`, `memory`, `everything` (via `npx`/`uvx`)
 
 ## Ferramentas utilizadas
 
