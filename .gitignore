@@ -7,3 +7,11 @@ dist/
 build/
 .venv/
 venv/
+
+# Node
+node_modules/
+
+# Ferramentas locais (nao versionar)
+.agents/
+.claude/
+.specs/
