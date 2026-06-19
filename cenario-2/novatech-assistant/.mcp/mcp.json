@@ -1,0 +1,30 @@
+{
+  "_comment": "MCP servers do NovaTech Assistant — todos locais e gratuitos (Dev 2.1). Least privilege: o filesystem recebe SO as pastas de trabalho; fontes de negocio (docs/novatech, data/retrieval-corpus) sao read-only por politica+auditoria git (o reference server nao tem flag read-only nativa). uvx requer 'pip install uv'. Justificativa de cada escopo: ver docs/mcp/mcp-mapping.md.",
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./src",
+        "./specs",
+        "./skills",
+        "./prompts",
+        "./docs",
+        "./data"
+      ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "."]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
+}
